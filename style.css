@@ -1,5 +1,5 @@
 
-name {
+.name {
   font-family: "Bitcount Grid Double", system-ui;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -9,8 +9,79 @@ name {
     "CRSV" 0.5,
     "ELSH" 0,
     "ELXP" 0;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 0;
+    padding: 0;
+    color:aliceblue
 }
 
-intro{
+.intro{
+  font-size: 20px;
+  text-align: center;
+}
 
+#emoji{
+font-family: "Bitcount Grid Double", system-ui;
+}
+
+body {
+  background-color: rgba(35, 39, 152, 0.391);
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-size: 20px;
+  color:aliceblue;
+  margin-left: 10%;
+}
+
+/*
+based of example here: https://www.w3schools.com/howto/howto_css_image_overlay.asp
+*/
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+  transition: 0.5s ease;
+  display: block;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:  black;
+  font-size: 22px;
+  opacity: 0;
+
+  transition: 0.5s ease;
+  pointer-events: none;
+
+  font-family: "Bitcount Grid Double", system-ui;
+  text-shadow: 2px 2px 5px black;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.image-container:hover img {
+  opacity: 0.3;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.details{
+    text-align: center;
 }
